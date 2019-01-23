@@ -1,0 +1,22 @@
+<html>
+	<body>
+	<script>
+		
+		var curYear = new Date().getFullYear();
+		
+		var person = {
+			name: "Fred Farcle",
+			yearBorn: 1982,
+			sexCode: "f",
+			getAge: function () { return (curYear - this.yearBorn); }
+		}
+
+		if ((person.yearBorn == 1982) && (person.sexCode == "m")) {
+			alert (person.name + " is taken");
+		}else{
+			alert (person.name + " is avoided");
+		}
+
+	</script>
+	</body>
+</html>

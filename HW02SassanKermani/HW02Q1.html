@@ -1,0 +1,20 @@
+<html>
+	<body>
+	<script>
+		var curYear = new Date().getFullYear();
+		var person = {
+		
+			name : "Fred Farcle",
+			yearBorn : 1982,
+			sexCode : "f",
+		
+			getAge: function (){ 
+				return (curYear - this.yearBorn); 
+			} 
+		}
+		
+		alert (person.name + " is " + person.getAge());
+		
+		</script>
+	</body>
+</html>

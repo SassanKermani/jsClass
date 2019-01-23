@@ -1,0 +1,23 @@
+<html>
+	<body>
+	<script>
+		
+		var curYear = new Date().getFullYear();
+		
+		var person = {
+			name: "Fred Farcle",
+			yearBorn: 1982,
+			sexCode: "f",
+			getAge: function () { return (curYear - this.yearBorn); }
+		}
+		/* the % operator used here performs a mod (remainder) operation */
+		
+		if ((person.getAge() % 2) == 0) {
+			alert (person.name + " is " + person.getAge() + " and is *normal*");
+		}else{
+			alert (person.name + " is " + person.getAge() + " and is *odd*");
+		}
+
+	</script>
+	</body>
+</html>
